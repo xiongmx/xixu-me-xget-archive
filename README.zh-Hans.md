@@ -2533,7 +2533,7 @@ client = OpenAI(
 
 ### 部署到 Cloudflare Workers
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **获取 Cloudflare 凭证**：
    - 访问[账户 API 令牌](https://dash.cloudflare.com/?to=/:account/api-tokens)创建并记录 API 令牌，使用“编辑 Cloudflare
@@ -2557,7 +2557,7 @@ client = OpenAI(
 
 ### 部署到 Cloudflare Pages
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **获取 Cloudflare 凭证**：
    - 访问[账户 API 令牌](https://dash.cloudflare.com/?to=/:account/api-tokens)创建并记录 API 令牌，使用“编辑 Cloudflare
@@ -2585,7 +2585,7 @@ client = OpenAI(
 
 ### 部署到 EdgeOne Pages
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **获取 EdgeOne Pages API Token**：
    - 访问[中国站 EdgeOne 控制台](https://console.cloud.tencent.com/edgeone/pages?tab=api)或[国际站 EdgeOne 控制台](https://console.tencentcloud.com/edgeone/pages?tab=api)创建并记录 API
@@ -2609,7 +2609,7 @@ client = OpenAI(
 
 ### 部署到 Vercel
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **获取 Vercel 凭证**：
    - 访问 [Vercel Account Settings](https://vercel.com/account/settings/tokens)
@@ -2638,7 +2638,7 @@ client = OpenAI(
 
 ### 部署到 Netlify
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **获取 Netlify 凭证**：
    - 访问 [Netlify User Settings](https://app.netlify.com/user/applications)
@@ -2665,7 +2665,7 @@ client = OpenAI(
 
 ### 部署到 Deno Deploy
 
-1. **fork 本存储库**：[Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+1. **fork 本存储库**：[Fork xixu-me/Xget 归档仓库](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **切换默认分支**：
    - 进入你的 GitHub 存储库 → Settings → General → Default branch
@@ -2687,32 +2687,32 @@ client = OpenAI(
 
 #### 使用预构建镜像
 
-从 GitHub Container Registry 拉取并运行预构建的镜像：
+从 Docker Hub 拉取并运行预构建的镜像：
 
 **使用 Docker:**
 
 ```bash
 # 拉取最新镜像
-docker pull ghcr.io/xixu-me/xget:latest
+docker pull xiongmx/xget:latest
 
 # 运行容器
 docker run -d \
   --name xget \
   -p 8080:8080 \
-  ghcr.io/xixu-me/xget:latest
+  xiongmx/xget:latest
 ```
 
 **使用 Podman:**
 
 ```bash
 # 拉取最新镜像
-podman pull ghcr.io/xixu-me/xget:latest
+podman pull xiongmx/xget:latest
 
 # 运行容器
 podman run -d \
   --name xget \
   -p 8080:8080 \
-  ghcr.io/xixu-me/xget:latest
+  xiongmx/xget:latest
 ```
 
 #### 本地构建
@@ -2723,7 +2723,7 @@ podman run -d \
 
 ```bash
 # 克隆存储库
-git clone https://github.com/xixu-me/Xget.git
+git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
 cd Xget
 
 # 构建镜像
@@ -2740,7 +2740,7 @@ docker run -d \
 
 ```bash
 # 克隆存储库
-git clone https://github.com/xixu-me/Xget.git
+git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
 cd Xget
 
 # 构建镜像
@@ -2762,7 +2762,7 @@ version: '3.8'
 
 services:
   xget:
-    image: ghcr.io/xixu-me/xget:latest
+    image: xiongmx/xget:latest
     container_name: xget
     ports:
       - '8080:8080'
@@ -2842,7 +2842,7 @@ const PLATFORM_PATH_TRANSFORMERS = {
 1. **存储库设置**
 
    ```bash
-   git clone https://github.com/xixu-me/Xget.git
+   git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
    cd Xget
    npm install
    npx wrangler login  # 首次使用
@@ -2940,8 +2940,7 @@ npx wrangler dev --log-level debug
 
 你可以通过以下方式参与：
 
-1. **报告问题**: 使用
-   [issue 模板](https://github.com/xixu-me/Xget/issues/new/choose)报告 bug 或提出功能请求。
+1. **报告问题**：原 Xget 项目的问题跟踪器已不可用，且本归档仓库目前未启用 GitHub Issues。
 2. **提交代码**: fork 存储库，创建功能分支并提交 pull request。
 3. **改进文档**: 修正错误、补充示例、完善说明。
 4. **测试反馈**: 在不同环境下测试并反馈结果。

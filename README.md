@@ -2575,7 +2575,7 @@ client = OpenAI(
 ### Deploy to Cloudflare Workers
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Get Cloudflare credentials**:
    - Visit
@@ -2604,7 +2604,7 @@ client = OpenAI(
 ### Deploy to Cloudflare Pages
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Get Cloudflare credentials**:
    - Visit
@@ -2640,7 +2640,7 @@ workflow.
 ### Deploy to EdgeOne Pages
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Get EdgeOne Pages API Token**:
    - Visit
@@ -2673,7 +2673,7 @@ workflow.
 ### Deploy to Vercel
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Get Vercel credentials**:
    - Visit [Vercel Account Settings](https://vercel.com/account/settings/tokens)
@@ -2708,7 +2708,7 @@ the sync workflow.
 ### Deploy to Netlify
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Get Netlify credentials**:
    - Visit [Netlify User Settings](https://app.netlify.com/user/applications) to
@@ -2741,7 +2741,7 @@ the sync workflow.
 ### Deploy to Deno Deploy
 
 1. **Fork this repository**:
-   [Fork xixu-me/Xget](https://github.com/xixu-me/Xget/fork)
+   [Fork this archive of xixu-me/Xget](https://github.com/xiongmx/xixu-me-xget-archive/fork)
 
 2. **Switch default branch**:
    - Go to your GitHub repository → Settings → General → Default branch
@@ -2768,32 +2768,32 @@ deployment:
 
 #### Using Pre-built Image
 
-Pull and run the pre-built image from GitHub Container Registry:
+Pull and run the pre-built image from Docker Hub:
 
 **Using Docker:**
 
 ```bash
 # Pull the latest image
-docker pull ghcr.io/xixu-me/xget:latest
+docker pull xiongmx/xget:latest
 
 # Run the container
 docker run -d \
   --name xget \
   -p 8080:8080 \
-  ghcr.io/xixu-me/xget:latest
+  xiongmx/xget:latest
 ```
 
 **Using Podman:**
 
 ```bash
 # Pull the latest image
-podman pull ghcr.io/xixu-me/xget:latest
+podman pull xiongmx/xget:latest
 
 # Run the container
 podman run -d \
   --name xget \
   -p 8080:8080 \
-  ghcr.io/xixu-me/xget:latest
+  xiongmx/xget:latest
 ```
 
 #### Building Locally
@@ -2804,7 +2804,7 @@ Build the container image from source:
 
 ```bash
 # Clone the repository
-git clone https://github.com/xixu-me/Xget.git
+git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
 cd Xget
 
 # Build the image
@@ -2821,7 +2821,7 @@ docker run -d \
 
 ```bash
 # Clone the repository
-git clone https://github.com/xixu-me/Xget.git
+git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
 cd Xget
 
 # Build the image
@@ -2843,7 +2843,7 @@ version: '3.8'
 
 services:
   xget:
-    image: ghcr.io/xixu-me/xget:latest
+    image: xiongmx/xget:latest
     container_name: xget
     ports:
       - '8080:8080'
@@ -2931,7 +2931,7 @@ const PLATFORM_PATH_TRANSFORMERS = {
 1. **Repository Setup**
 
    ```bash
-   git clone https://github.com/xixu-me/Xget.git
+   git clone https://github.com/xiongmx/xixu-me-xget-archive Xget
    cd Xget
    npm install
    npx wrangler login  # First time use
@@ -3075,9 +3075,8 @@ need the full collaboration and maintenance context:
 
 You can help by:
 
-1. **Report Issues**: Use
-   [issue templates](https://github.com/xixu-me/Xget/issues/new/choose) to
-   report bugs or propose feature requests.
+1. **Report Issues**: The original Xget issue tracker is no longer available,
+   and GitHub Issues are disabled for this archive.
 2. **Submit Code**: Fork the repository, create a feature branch, and open a
    pull request.
 3. **Improve Documentation**: Fix errors, add examples, and improve
