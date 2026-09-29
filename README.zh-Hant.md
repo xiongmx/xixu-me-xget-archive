@@ -2687,32 +2687,32 @@ client = OpenAI(
 
 #### 使用預先建置鏡像
 
-從 Docker Hub 拉取並執行預先建置的鏡像：
+從 GitHub Container Registry 拉取並執行預先建置的鏡像：
 
 **使用 Docker:**
 
 ```bash
 # 拉取最新鏡像
-docker pull xiongmx/xget:latest
+docker pull ghcr.io/xiongmx/xixu-me-xget-archive:latest
 
 # 執行容器
 docker run -d \
   --name xget \
   -p 8080:8080 \
-  xiongmx/xget:latest
+  ghcr.io/xiongmx/xixu-me-xget-archive:latest
 ```
 
 **使用 Podman:**
 
 ```bash
 # 拉取最新鏡像
-podman pull xiongmx/xget:latest
+podman pull ghcr.io/xiongmx/xixu-me-xget-archive:latest
 
 # 執行容器
 podman run -d \
   --name xget \
   -p 8080:8080 \
-  xiongmx/xget:latest
+  ghcr.io/xiongmx/xixu-me-xget-archive:latest
 ```
 
 #### 本地建置
@@ -2762,7 +2762,7 @@ version: '3.8'
 
 services:
   xget:
-    image: xiongmx/xget:latest
+    image: ghcr.io/xiongmx/xixu-me-xget-archive:latest
     container_name: xget
     ports:
       - '8080:8080'

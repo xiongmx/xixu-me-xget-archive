@@ -2768,32 +2768,32 @@ deployment:
 
 #### Using Pre-built Image
 
-Pull and run the pre-built image from Docker Hub:
+Pull and run the pre-built image from GitHub Container Registry:
 
 **Using Docker:**
 
 ```bash
 # Pull the latest image
-docker pull xiongmx/xget:latest
+docker pull ghcr.io/xiongmx/xixu-me-xget-archive:latest
 
 # Run the container
 docker run -d \
   --name xget \
   -p 8080:8080 \
-  xiongmx/xget:latest
+  ghcr.io/xiongmx/xixu-me-xget-archive:latest
 ```
 
 **Using Podman:**
 
 ```bash
 # Pull the latest image
-podman pull xiongmx/xget:latest
+podman pull ghcr.io/xiongmx/xixu-me-xget-archive:latest
 
 # Run the container
 podman run -d \
   --name xget \
   -p 8080:8080 \
-  xiongmx/xget:latest
+  ghcr.io/xiongmx/xixu-me-xget-archive:latest
 ```
 
 #### Building Locally
@@ -2843,7 +2843,7 @@ version: '3.8'
 
 services:
   xget:
-    image: xiongmx/xget:latest
+    image: ghcr.io/xiongmx/xixu-me-xget-archive:latest
     container_name: xget
     ports:
       - '8080:8080'
