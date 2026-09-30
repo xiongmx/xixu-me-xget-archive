@@ -152,7 +152,7 @@
 
 ### 生態系統整合
 
-- **專用瀏覽器擴充功能**：[Xget Now](https://github.com/xixu-me/Xget-Now)
+- **專用瀏覽器擴充功能**：[Xget Now](https://github.com/xiongmx/Xget-Now)
   提供無縫體驗
   - 自動 URL 轉址，無需手動修改 URL
   - 支援自訂 Xget 實例網域

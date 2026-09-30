@@ -186,7 +186,7 @@ supported platform URL to Xget's acceleration format with one click
 ### Ecosystem Integration
 
 - **Dedicated Browser Extension**:
-  [Xget Now](https://github.com/xixu-me/Xget-Now) provides seamless experience
+  [Xget Now](https://github.com/xiongmx/Xget-Now) provides seamless experience
   - Automatic URL redirection, no manual URL modification needed
   - Support for custom Xget instance domains
   - Multi-platform preference settings and blacklist/whitelist management

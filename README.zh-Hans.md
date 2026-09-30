@@ -151,7 +151,7 @@
 
 ### 生态系统集成
 
-- **专用浏览器扩展**：[Xget Now](https://github.com/xixu-me/Xget-Now)
+- **专用浏览器扩展**：[Xget Now](https://github.com/xiongmx/Xget-Now)
   提供无缝体验
   - 自动 URL 重定向，无需手动修改 URL
   - 支持自定义 Xget 实例域名
